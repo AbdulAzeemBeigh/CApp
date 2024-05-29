@@ -1,20 +1,32 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
-// eslint-disable-next-line no-unused-vars
-import SearchInput from "./searchInput";
 import Conversations from "./Conversations";
-import LogOut from "./LogOut";
+import LogoutButton from "./LogoutButton";
+import SearchInput from "./SearchInput";
 
-const sidebar = () => {
-  return (
-    <div className="border-r border-slate-500 p-4 flex flex-col">
-      <SearchInput />
-      <div className="divider px-3"></div>
-      <Conversations />
-      <div className="divider px-5"></div>
-      <LogOut />
-    </div>
-  );
+const Sidebar = () => {
+	return (
+		<div className='border-r border-slate-500 p-4 flex flex-col'>
+			<SearchInput />
+			<div className='divider px-3'></div>
+			<Conversations />
+			<LogoutButton />
+		</div>
+	);
 };
+export default Sidebar;
 
-export default sidebar;
+// STARTER CODE FOR THIS FILE
+// import Conversations from "./Conversations";
+// import LogoutButton from "./LogoutButton";
+// import SearchInput from "./SearchInput";
+
+// const Sidebar = () => {
+// 	return (
+// 		<div className='border-r border-slate-500 p-4 flex flex-col'>
+// 			<SearchInput />
+// 			<div className='divider px-3'></div>
+// 			<Conversations />
+// 			<LogoutButton />
+// 		</div>
+// 	);
+// };
+// export default Sidebar;
